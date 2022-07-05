@@ -1,0 +1,28 @@
+.some-box {
+  color: red;
+  font-size: 20px;
+  -webkit-border-radius: 8px;
+          border-radius: 8px;
+  background: purple;
+  width: 200px;
+  height: 300px;
+}
+
+@media only screen and (min-width: 320px) {
+  .some-box {
+    background-color: blue;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .some-box {
+    background-color: green;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .some-box {
+    background-color: yellowgreen;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,21 @@
+$mobile_res_min_width: 320px;
+$tablet_res_min_width: 768px;
+$desktop_res_min_width: 1024px;
+
+@mixin m_query($deviceType) {
+  @if $deviceType == phone {
+    @media only screen and(min-width: $mobile_res_min_width) {
+      @content;
+    }
+  }
+  @if $deviceType == tablet {
+    @media only screen and(min-width: $tablet_res_min_width) {
+      @content;
+    }
+  }
+  @if $deviceType == desktop {
+    @media only screen and(min-width: $desktop_res_min_width) {
+      @content;
+    }
+  }
+}

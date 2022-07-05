@@ -1,0 +1,22 @@
+@import './partials/colors';
+@import './partials/fonts';
+@import './partials/variables';
+@import './partials/mixinis';
+@import './partials/media-queries';
+
+.some-box {
+  color: $text_color_red;
+  font-size: $p_f_size;
+  border-radius: $default_border_radius;
+  background: $default_box_bg;
+  @include widthHeight(200px, 300px);
+  @include m_query(phone) {
+    background-color: blue;
+  }
+  @include m_query(tablet) {
+    background-color: green;
+  }
+  @include m_query(desktop) {
+    background-color: yellowgreen;
+  }
+}
